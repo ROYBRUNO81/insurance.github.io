@@ -207,11 +207,44 @@ best_threshold = thr[f1_vals.argmax()]
 
 #### **Model Performance Comparison**
 
-| Model | ROC-AUC | PR-AUC | Accuracy @ 0.5 | Log Loss | Notes |
-|-------|---------|--------|----------------|----------|-------|
-| **Logistic Regression** | 0.617 | ~0.09 | 0.559 | 0.675 | Baseline linear model |
-| **Random Forest** | **0.660** | **0.109** | 0.732 | 0.517 | Best tuned ensemble ✅ |
-| **XGBoost** | 0.669 | 0.115 | 0.582 @ 0.5 | 0.632 | Highest ROC-AUC but low precision |
+<table>
+  <thead>
+    <tr>
+      <th>Model</th>
+      <th>ROC-AUC</th>
+      <th>PR-AUC</th>
+      <th>Accuracy @ 0.5</th>
+      <th>Log Loss</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Logistic Regression</strong></td>
+      <td>0.617</td>
+      <td>~0.090</td>
+      <td>0.559</td>
+      <td>0.675</td>
+      <td>Baseline linear model</td>
+    </tr>
+    <tr>
+      <td><strong>Random Forest</strong></td>
+      <td><strong>0.660</strong></td>
+      <td><strong>0.109</strong></td>
+      <td>0.732</td>
+      <td>0.517</td>
+      <td>Best tuned ensemble ✅</td>
+    </tr>
+    <tr>
+      <td><strong>XGBoost</strong></td>
+      <td>0.669</td>
+      <td>0.115</td>
+      <td>0.582</td>
+      <td>0.632</td>
+      <td>Highest ROC-AUC but low precision</td>
+    </tr>
+  </tbody>
+  </table>
 
 #### **Best Model: Random Forest (Final)**
 ```
@@ -261,10 +294,39 @@ Actual No   8194   2723
 
 #### **Model Performance Comparison**
 
-| Model | ROC-AUC | PR-AUC | Accuracy @ 0.5 | Precision @ 0.5 | Recall @ 0.5 | F1-Score |
-|-------|---------|--------|----------------|-----------------|--------------|----------|
-| **Logistic Regression** | **0.906** | **0.812** | **0.842** | **0.755** | **0.732** | **0.743** ✅ |
-| **Random Forest** | 0.897 | 0.787 | 0.829 | 0.721 | 0.742 | 0.731 |
+<table>
+  <thead>
+    <tr>
+      <th>Model</th>
+      <th>ROC-AUC</th>
+      <th>PR-AUC</th>
+      <th>Accuracy @ 0.5</th>
+      <th>Precision @ 0.5</th>
+      <th>Recall @ 0.5</th>
+      <th>F1-Score</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Logistic Regression</strong></td>
+      <td><strong>0.906</strong></td>
+      <td><strong>0.812</strong></td>
+      <td><strong>0.842</strong></td>
+      <td><strong>0.755</strong></td>
+      <td><strong>0.732</strong></td>
+      <td><strong>0.743</strong> ✅</td>
+    </tr>
+    <tr>
+      <td><strong>Random Forest</strong></td>
+      <td>0.897</td>
+      <td>0.787</td>
+      <td>0.829</td>
+      <td>0.721</td>
+      <td>0.742</td>
+      <td>0.731</td>
+    </tr>
+  </tbody>
+</table>
 
 #### **Best Model: Logistic Regression**
 ```
