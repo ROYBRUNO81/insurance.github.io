@@ -48,3 +48,7 @@ This project explores two car-insurance datasets and builds models to predict wh
 - Takeaway
   - LR has better ranking (PR/ROC‑AUC), higher precision, fewer false positives.
   - RF finds slightly more true claims (465 vs 459) with more false alarms.
+
+## Data sources
+- Vehicle/specs insurance claims: https://www.kaggle.com/datasets/litvinenko630/insurance-claims/data
+- Driver-profile car insurance: https://www.kaggle.com/datasets/sagnik1511/car-insurance-data
